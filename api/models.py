@@ -8,8 +8,8 @@ class PuntoAcopio(models.Model):
     direccion = models.CharField(max_length=200) # Dirección del punto de reciclaje
 
     # Esta función hace que Django muestre el nombre real del punto
-    def __str__(self):
-        return self.nombre
+    def __str__(self):   #  def __str__(self): es un método especial en Python que define cómo se representa un objeto como una cadena de texto. En este caso, devuelve el nombre del punto de reciclaje para que sea más fácil de identificar en la interfaz de administración de Django.
+        return self.nombre # returns the name of the recycling point for easy identification in the admin interface
 
 
 # 2. Modelo para las entregas de material reciclable (Tu parte - Relación 1 a Muchos)
